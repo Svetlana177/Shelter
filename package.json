@@ -1,0 +1,26 @@
+{
+  "name": "shelter",
+  "version": "24.0.0",
+  "private": true,
+  "description": "Shelter",
+  "repository": {
+    "type": "git",
+    "url": "{{sshUrl}}"
+  },
+  "bugs": {
+    "url": "{{bugsUrl}}"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.14",
+    "eslint": "7.18.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "browser-sync start --server --no-ui --files \"js/**/*.js\"",
+    "test": "eslint js/"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  }
+}
