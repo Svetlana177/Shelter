@@ -1,5 +1,10 @@
 const slider = document.querySelector('.pets-slider');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const slideCount = 8;
+let slideIndex = 0;
 
+//Рендер pets__card, подгружаем JSON
 //Вариант 1
 // function creatSlides(item) {
 //   return `
@@ -35,10 +40,28 @@ const renderSimilarPets = (similarPets) => {
 
 fetch('./static/pets.json')
   .then((response) => response.json())
-  .then((dataPets) => {
-    renderSimilarPets(dataPets);
+  .then((pets) => {
+    renderSimilarPets(pets);
   });
 
+//pets slider
+prevButton.addEventListener('click', () => {
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+  slide();
+});
 
+nextButton.addEventListener('click', () => {
+  slideIndex = (slideIndex + 1) % slideCount;
+  slide();
+});
 
+const slide = () => {
+  const imageWidth = 320;
+  let slideOffset = -slideIndex * imageWidth;
+  slider.style.transform = `translateX(${slideOffset}px)`;
+}
+
+window.addEventListener('load', () => {
+  slide();
+});
 

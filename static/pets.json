@@ -33,6 +33,17 @@
     "parasites": ["none"]
   },
   {
+    "name": "Jastin",
+    "img": "../img/friends/pets-jastin.png",
+    "type": "Cat",
+    "breed": "British Shorthair",
+    "description": "Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.",
+    "age": "1 year",
+    "inoculations": ["calicivirus", "viral rhinotracheitis"],
+    "diseases": ["kidney stones"],
+    "parasites": ["none"]
+  },
+  {
     "name": "Scarlett",
     "img": "../img/friends/pets-scarlet.png",
     "type": "Dog",
@@ -86,5 +97,16 @@
     "inoculations": ["bordetella bronchiseptica", "leptospirosis"],
     "diseases": ["deafness", "blindness"],
     "parasites": ["lice", "fleas"]
+  },
+  {
+    "name": "Greg",
+    "img": "../img/friends/pets-greg.png",
+    "type": "Cat",
+    "breed": "British Shorthair",
+    "description": "Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.",
+    "age": "1 year",
+    "inoculations": ["rabies"],
+    "diseases": ["none"],
+    "parasites": ["none"]
   }
 ]
