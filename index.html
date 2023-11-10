@@ -92,23 +92,28 @@
         </div>
       </div>
     </section>
-    <section class="shelter-friends--wrapper">
-      <div class="shelter-friends container">
-        <h3 class="shelter-title-h3 shelter-title-h3--friends" id="our-friends">Our friends who <br>are looking for a house</h3>
-        <div class="shelter-friends-slider">
-          <!-- Контейнер для изображений от других пользователей -->
-          <ul class="shelter-friends__list">
 
-
-          </ul>
-          <button class="shelter-friends__btn-slider shelter-friends__btn-slider__prev"></button>
-          <button class="shelter-friends__btn-slider shelter-friends__btn-slider__next"></button>
-        </div>
-        <div class="shelter-friends__get">
-          <a class="shelter-button-primary" href="pets.html">Get to know the rest</a>
-        </div>
+    <section class="shelter-slider-container container">
+      <div class="slider-container1">
+        <ul class="pets-slider">
+          <!--js slider-->
+        </ul>
       </div>
+      <button class="shelter-friends__btn-slider prev-button" type="button" aria-label="Посмотреть предыдущий слайд"></button>
+      <button class="shelter-friends__btn-slider next-button" type="button" aria-label="Посмотреть следующий слайд"></button>
     </section>
+
+
+    <template id="pets-template" style="display: none">
+        <li class="pets__card">
+          <img src="" alt="" class="pets__image">
+          <h4 class="pets_pet-name"></h4>
+          <button class="shelter__button shelter__button--learn-more">
+            Learn more
+          </button>
+        </li>
+    </template>
+
 
     <section id="help">
       <div class="shelter-help container">
@@ -221,13 +226,13 @@
 
   <div class="overlay">
     <section class="popup hidden" id="popup-template">
-      <img class="popup__img" src="" alt="порода" width="500" height="500">
+      <img class="popup__img"  src="img/friends/pets-jennifer.png" alt="Порода" width="500" height="500">
       <div class="popup__content">
-        <h3 class="popup__name"></h3>
-        <p class="popup__type-breed"></p>
-        <p class="popup__text">vmfd;dfv</p>
+        <h3 class="popup__name">Jennifer</h3>
+        <p class="popup__type-breed">Cat </p>
+        <p class="popup__description">Hello world!</p>
         <ul class="popup__list">
-          <li class="popup__item">Age: <span class="popup__age"></span></li>
+          <li class="popup__item">Age: 35<span class="popup__age"></span></li>
           <li class="popup__item">Inoculations: <span class="popup__inoculations"></span></li>
           <li class="popup__item">Diseases: <span class="popup__diseases"></span> </li>
           <li class="popup__item">Parasites: <span class="popup__parasites"></span> </li>
@@ -237,6 +242,12 @@
     </section>
   </div>
 
+
+  <div class="modal-overlay"></div>
+
+  <div class="pets-popup__overlay visually-hidden">
+    <div class="pets-popup"></div>
+  </div>
 
 
   <script src="js/card.js"></script>
