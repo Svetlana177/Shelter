@@ -66,17 +66,6 @@
     "parasites": ["none"]
   },
   {
-    "name": "Timmy",
-    "img": "../img/friends/pets-timmy.png",
-    "type": "Cat",
-    "breed": "British Shorthair",
-    "description": "Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.",
-    "age": "2 years 3 months",
-    "inoculations": ["calicivirus", "viral rhinotracheitis"],
-    "diseases": ["kidney stones"],
-    "parasites": ["none"]
-  },
-  {
     "name": "Freddie",
     "img": "../img/friends/pets-freddie.png",
     "type": "Cat",
@@ -85,6 +74,17 @@
     "age": "2 months",
     "inoculations": ["rabies"],
     "diseases": ["none"],
+    "parasites": ["none"]
+  },
+  {
+    "name": "Timmy",
+    "img": "../img/friends/pets-timmy.png",
+    "type": "Cat",
+    "breed": "British Shorthair",
+    "description": "Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.",
+    "age": "2 years 3 months",
+    "inoculations": ["calicivirus", "viral rhinotracheitis"],
+    "diseases": ["kidney stones"],
     "parasites": ["none"]
   },
   {

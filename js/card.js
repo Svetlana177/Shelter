@@ -56,7 +56,7 @@ nextButton.addEventListener('click', () => {
 });
 
 const slide = () => {
-  const imageWidth = 320;
+  const imageWidth = 310;
   let slideOffset = -slideIndex * imageWidth;
   slider.style.transform = `translateX(${slideOffset}px)`;
 }
