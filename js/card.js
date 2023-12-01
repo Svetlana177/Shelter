@@ -44,7 +44,27 @@ fetch('./static/pets.json')
     renderSimilarPets(pets);
   });
 
-//pets slider
+
+// Функция для отображения слайдов в зависимости от ширины экрана
+const updateSlidesDisplay = () => {
+  const windowWidth = window.innerWidth;
+
+  if (windowWidth <= 767) {
+    // Для мобильных устройств показываем только один слайд
+    slideIndex = Math.min(slideIndex, slideCount - 1);
+    slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+  } else {
+    // Для всех остальных устройств показываем 3 слайда
+    const imageWidth = 310;
+    slider.style.transform = `translateX(-${slideIndex * imageWidth}px)`;
+  }
+};
+
+// При загрузке страницы и при изменении размера окна вызываем функцию обновления слайдов
+window.addEventListener('load', updateSlidesDisplay);
+window.addEventListener('resize', updateSlidesDisplay);
+
+//pets slider carousel
 prevButton.addEventListener('click', () => {
   slideIndex = (slideIndex - 1 + slideCount) % slideCount;
   slide();
@@ -65,3 +85,21 @@ window.addEventListener('load', () => {
   slide();
 });
 
+//pets-card popup
+const btnLearnMore = document.querySelector('.shelter__button--learn-more');
+const shelterPopup = document.querySelector('.shelter-popup');
+const petsCard = document.querySelector('.pets__card');
+const showPopup = () => {
+
+}
+
+petsCard.addEventListener('click', () => {
+  console.log('click')
+
+  //showPopup();
+})
+
+btnLearnMore.addEventListener('click', () => {
+
+  //showPopup();
+})

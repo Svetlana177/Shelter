@@ -17,11 +17,6 @@ html {
     position: relative;
 }
 
-/*img {*/
-/*    max-width: 100%;*/
-/*}*/
-
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -45,6 +40,7 @@ html {
     .container {
         max-width: 768px;
         padding: 0 3.9%;
+      box-sizing: border-box;
     }
 }
 
@@ -52,6 +48,7 @@ html {
     .container {
         max-width: 320px;
         padding: 0 3.1%;
+        box-sizing: border-box;
     }
 }
 
@@ -829,6 +826,10 @@ html {
     }
 }
 
+.shelter__button--learn-more {
+  cursor: pointer;
+}
+
 .shelter-friends__item:hover > .shelter-friends__link .shelter__button--learn-more  {
     background: #FDDCC4;
     border: 2px solid #FDDCC4;
@@ -1593,7 +1594,6 @@ html {
   display: none;
 }
 
-
 .modal-open {
   height: 100vh;
   overflow: hidden;
@@ -1871,7 +1871,19 @@ html {
   transition: transform 500ms ease-in-out;
 }
 
-.pets-slider {
+@media (max-width: 768px) {
+  .slider-container1 {
+    width: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-container1 {
+    width: 320px;
+  }
+}
+
+  .pets-slider {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1885,6 +1897,7 @@ html {
   background: #ffffff;
   border-radius: 9px;
   text-align: center;
+  cursor: pointer;
 }
 
 .pets__card img {
